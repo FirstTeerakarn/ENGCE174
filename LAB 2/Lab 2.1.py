@@ -1,19 +1,21 @@
+n = 7 # กำหนดค่าตัวแปล n
+
 while True:
-  num_input = input("กดเลข '5' : " )
-  if num_input == '5':
-    for i in range(1, 6):
+  num_input = input("กดเลขที่ต้องการ : " )
+  if num_input == '7':  # เช็คตัวเลขว่าตรงกับที่กรอกไปหรือป่าว
+    for i in range(1, n+1):
       print('* ' * i)
-    print("-----------------")
-    for i in range(5, 0, -1):
+    print("------------------------")
+    for i in range(n, 0, -1):
       print('* ' * i)
-    print("-----------------")
-    for i in range(1, 6):
-      print('  ' * (5 - i) + '*  ' * i)
-    print("-----------------")
-    for i in range(5, 0, -1):
-      print('  ' * (5 - i) + '*  ' * i)
-    print("-----------------")
-    for i in range(1, 6):
-      print('    ' * (5 - i) + '*  ' * i )
-    print("-----------------")
+    print("------------------------")
+    for i in range(1, n+1):
+      print('  ' * (n - i) + '*  ' * i)
+    print("------------------------")
+    for i in range(n, 0, -1):
+      print('  ' * (n - i) + '*  ' * i)
+    print("------------------------")
+    for i in range(1, n+1):
+      print('    ' * (n - i) + '*  ' * i )
+    print("------------------------")
     break
